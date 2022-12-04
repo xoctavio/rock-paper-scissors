@@ -29,3 +29,10 @@ body {
  align-items: center;
  margin-bottom: .5rem;
 }
+
+.title-one,
+.title-two {
+ border-bottom: 2px solid white;
+ padding: .5rem;
+ margin-bottom: .5rem;
+}
