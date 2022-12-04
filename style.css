@@ -36,3 +36,12 @@ body {
  padding: .5rem;
  margin-bottom: .5rem;
 }
+
+h1:hover {
+ color: white;
+ cursor: pointer;
+}
+
+p {
+ color: goldenrod;
+}
