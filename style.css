@@ -45,3 +45,22 @@ h1:hover {
 p {
  color: goldenrod;
 }
+
+button {
+ border: none;
+ border-radius: 2px;
+ margin-bottom: .5rem;
+
+ font-weight: bold;
+ background: #18181b;
+ color: lightslategray;
+ width: 150px;
+ padding: 15px 0;
+ text-transform: uppercase;
+}
+
+button:hover {
+ cursor: pointer;
+ background: lightslategray;
+ color: #18181b;
+}
