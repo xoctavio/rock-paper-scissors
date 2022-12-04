@@ -16,4 +16,12 @@ console.log(total);
 function playerRandom() {
  let pick = Math.floor(Math.random() * 3);
  player.textContent = hand[pick];
+ 
+ // cpu hand
+ cpuRandom();
+}
+
+function cpuRandom() {
+ let pick = Math.floor(Math.random() * 3);
+ cpu.textContent = hand[pick];
 }
