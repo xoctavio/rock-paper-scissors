@@ -29,6 +29,14 @@ function playerRandom() {
  }
 
  total.textContent = `total: ${playerPoints}`
+
+ if (playerPoints === 5) {
+  total.textContent = `YOU WIN!`;
+  playerPoints = 0
+ } else if (playerPoints === -5) {
+  total.textContent = `YOU LOSE`;
+  playerPoints = 0
+ }
 }
 
 function cpuRandom() {
