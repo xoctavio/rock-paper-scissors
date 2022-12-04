@@ -19,6 +19,16 @@ function playerRandom() {
  
  // cpu hand
  cpuRandom();
+
+ if ((player.textContent === hand[0] && cpu.textContent === hand[2]) || (player.textContent === hand[1] && cpu.textContent === hand[0]) || (player.textContent === hand[2] && cpu.textContent === hand[1])) {
+  playerPoints += 1;
+ } else if ((player.textContent === hand[2] && cpu.textContent === hand[0]) || (player.textContent === hand[0] && cpu.textContent === hand[1]) || (player.textContent === hand[1] && cpu.textContent === hand[2])) {
+  playerPoints -= 1;
+ } else {
+  playerPoints += 0;
+ }
+
+ total.textContent = `total: ${playerPoints}`
 }
 
 function cpuRandom() {
